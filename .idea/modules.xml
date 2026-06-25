@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Kolokwia_2.iml" filepath="$PROJECT_DIR$/Kolokwia_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Powtorzenie/Powtorzenie.iml" filepath="$PROJECT_DIR$/Powtorzenie/Powtorzenie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/k3_2023/k3_2023.iml" filepath="$PROJECT_DIR$/k3_2023/k3_2023.iml" />
     </modules>
   </component>
 </project>
