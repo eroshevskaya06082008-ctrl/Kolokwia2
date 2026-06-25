@@ -45,7 +45,7 @@ public class ServerThread implements Runnable{
 
     public void send(double x, double y, double r, Color color){
         if(writer != null){
-            String mes = Dot.toMessage(x, y, r, color);
+            String mes = Dot.toMessage(x, y, r, color, false);
             writer.println(mes);
         }
     }

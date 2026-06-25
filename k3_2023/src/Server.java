@@ -111,7 +111,7 @@ public class Server {
                     }
                 }
 
-                // Усредняем
+
                 r /= count; g /= count; b /= count;
                 int newRgb = (r << 16) | (g << 8) | b;
                 dest.setRGB(x, y, newRgb);

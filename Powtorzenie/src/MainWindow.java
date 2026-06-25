@@ -94,7 +94,8 @@ public class MainWindow extends JFrame {
         canvas.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                serverThread.send(e.getX(), e.getY(), radiusSlider.getValue(), selectedColor);
+                String message = Dot.toMessage(e.getX(), e.getY(), radiusSlider.getValue(), selectedColor, false);
+                serverThread.send(message);
             }
         });
 

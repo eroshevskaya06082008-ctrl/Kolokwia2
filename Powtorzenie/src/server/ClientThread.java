@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.sql.SQLException;
 import java.util.List;
 
 public class ClientThread implements Runnable{
@@ -32,6 +33,8 @@ public class ClientThread implements Runnable{
             }
         } catch (IOException e) {
             System.err.println("Connection was ended: " + e.getMessage());
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
     }
 
